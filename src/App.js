@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import Home from './components/Home/Home';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Kategori from './components/Kategori/Kategori';
+import Geografi from './components/Pertanyaan/Geografi/Geografi';
+import Umum from './components/Pertanyaan/Umum/Umum';
+import Olahraga from './components/Pertanyaan/Olahraga/Olahraga';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Kategori" element={<Kategori />} />
+        <Route path="/Olahraga" element={<Olahraga />} />
+        <Route path="/Geografi" element={<Geografi />} />
+        <Route path="/Umum" element={<Umum />} />
+      </Routes>
     </div>
   );
 }

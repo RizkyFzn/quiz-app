@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+h2 {
+  font-size: 2rem;
+}
+
+.kategori {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .btn-kategori {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  background-color: #c8e0ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .app {
+    background-color: #252d4a;
+    width: 50vw;
+    min-height: 200px;
+    height: min-content;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .score-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    align-items: center;
+
+    .btn-back {
+      margin-top: 25px;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+      font-size: 15px;
+      font-weight: 500;
+      transition-duration: 0.1s;
+      &:hover {
+        transform: scale(1.1);
+        background: linear-gradient(180deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+        box-shadow: rgba(205, 205, 209, 0.2) 0px 7px 29px 0px;
+      }
+    }
+  }
+
+  /* QUESTION/TIMER/LEFT SECTION */
+  .question-section {
+    width: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  .question-count {
+    margin-bottom: 20px;
+
+    span {
+      font-size: 28px;
+    }
+  }
+
+  .question-text {
+    margin-bottom: 12px;
+  }
+
+  /* ANSWERS/RIGHT SECTION */
+  .answer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #252d4a;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #4f6377;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: #252d4a;
+      font-weight: 600;
+    }
+  }
+
+  .correct {
+    background-color: #2f922f;
+  }
+
+  .incorrect {
+    background-color: #ff3333;
+  }
+}
